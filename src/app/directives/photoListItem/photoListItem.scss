@@ -1,0 +1,74 @@
+.photoListItem {
+  width: 100%;
+  border: 1px solid black;
+  height: 90px;
+  background: #fcf5d1;
+
+  .photoImg {
+    float: left;
+    overflow: hidden;
+    height: 90px;
+    width: 124px;
+    img {
+      max-width: 124px;
+      min-height: 90px;
+    }
+  }
+
+  .photoDetails {
+    font-size: 14px;
+    margin-left: 124px;
+    padding: 18px 10px;
+    overflow: hidden;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-bottom: 18px;
+    }
+
+    ul {
+      li {
+        float: left;
+        padding-right: 18px;
+        font-size: 12px;
+        line-height: 14px;
+        a {
+          color: blue;
+        }
+      }
+      li:first-child {
+        font-size: 14px;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+
+      h2 {
+        padding-bottom: 6px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li:nth-child(1) {
+          order: 2;
+          max-width: 45%;
+        }
+        li:nth-child(2) {
+          order: 1;
+          width: 100%;
+          padding-bottom: 6px;
+        }
+        li:nth-child(3) {
+          order: 3;
+        }
+      }
+    }
+  }
+}

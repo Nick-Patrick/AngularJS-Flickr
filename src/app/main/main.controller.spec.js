@@ -1,12 +1,7 @@
 (function() {
   'use strict';
+  describe('main controller', function () {
 
-  describe('controllers', function(){
 
-    beforeEach(module('potato'));
-
-    it('test', function () {
-      expect('a').toEqual('a');
-    });
   });
 })();

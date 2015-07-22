@@ -1,0 +1,13 @@
+<div class="photoListItem">
+  <div class="photoImg">
+    <img src="{{ photo.media.m }}"/>
+  </div>
+  <div class="photoDetails">
+    <h2>{{ photo.title }}</h2>
+    <ul>
+      <li><a href="{{ $scope.getAuthorUrl() }}">{{ photo.author }}</a></li>
+      <li>Published: {{ $scope.getPublishedDate() }}</li>
+      <li><a href="{{ photo.link }}">View on Flickr</a></li>
+    </ul>
+  </div>
+</div>

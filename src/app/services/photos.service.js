@@ -18,7 +18,6 @@
           }
         })
         .error(function (data, status) {
-          console.log(status, data);
           deferred.reject(status, data);
         });
 

@@ -10,6 +10,15 @@
   padding: 0.2em 0;
 }
 
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
 // injector
