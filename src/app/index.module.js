@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('potato', ['ngAnimate', 'ngResource', 'ngRoute']);
+    .module('potato', ['ngAnimate', 'ngResource', 'ngRoute', 'infinite-scroll']);
 
 })();

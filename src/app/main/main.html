@@ -1,5 +1,5 @@
 <div class="photosList" ng-controller="MainController">
-  <ul>
+  <ul infinite-scroll="getMorePhotos()">
     <photo-list-item ng-repeat="photo in photos"></photo-list-item>
   </ul>
 </div>
