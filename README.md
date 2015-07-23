@@ -5,7 +5,7 @@ AngularJS Project
 ## Install
 
 ```
-$ gulp build 
+$ npm install 
 ```
 ```
 $ bower install
@@ -31,9 +31,9 @@ $ gulp serve
 
 ### Unit tests
 ```
-$ gulp proteactor
+$ gulp test
 ```
 ### e2e tests
 ```
-$ gulp proteactor
+$ gulp protractor
 ```
