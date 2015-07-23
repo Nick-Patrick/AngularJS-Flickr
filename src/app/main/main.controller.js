@@ -11,7 +11,7 @@
 
     photos.getAllPhotos().then(function (response) {
       allPhotos = response.items;
-      $scope.photos = allPhotos.slice(0,6);
+      $scope.photos = allPhotos.slice(0,12);
     });
 
     $scope.getMorePhotos = function () {
@@ -21,7 +21,7 @@
           $scope.photos.push(allPhotos[lastCount + i]);
         }
       }
-    }
+    };
 
   }
 })();
