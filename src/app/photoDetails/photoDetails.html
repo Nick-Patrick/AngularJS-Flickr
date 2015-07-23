@@ -1,0 +1,31 @@
+<div class="photoDetail" ng-controller="PhotoDetailsController">
+  <div class="photoHeader">
+    <h2><a href="{{ photo.link }}">{{ photo.title }}</a></h2>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <a href="#/" class="button">Back</a>
+  </div>
+  <div class="photoSubHeader">
+    <ul>
+      <li><a href="{{ getAuthorUrl() }}">{{ photo.author }}</a></li>
+      <li>Published: {{ getPublishedDate() }}</li>
+      <li><div class="g-plusone" data-size="medium"></div></li>
+    </ul>
+  </div>
+  <div class="photoContent">
+    <div class="photoImage">
+      <img ng-src="{{ photo.media.m }}"/>
+    </div>
+    <div class="description">
+      <p>{{ photo.lorem }}</p>
+      <p>{{ photo.lorem }}</p>
+      <div class="tags">
+        <span>Tags: </span>
+        <ul>
+          <li ng-repeat="tag in photo.allTags">{{ tag }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+

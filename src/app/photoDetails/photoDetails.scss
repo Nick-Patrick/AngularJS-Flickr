@@ -1,0 +1,121 @@
+.photoDetail {
+  padding: 18px 20px 30px;
+  border: 1px solid #dfb46c;
+  background: #EFEAE2;
+
+  .photoHeader {
+    height: 40px;
+    h2 {
+      float: left;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    .button {
+      float: right;
+      width: 70px;
+      height: 25px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center;
+      background-color: #dfb46c;
+      border: 2px solid #fff;
+      text-shadow: 0px 1px 2px #bbb;
+      -webkit-box-shadow: 0px 1px 0px #888;
+      -moz-box-shadow: 0px 1px 0px #888;
+      box-shadow: 0px 1px 0px #888;
+      transition: background-color 0.2s linear;
+      &:hover {
+        background-color: #c6a060;
+      }
+    }
+  }
+
+  .photoSubHeader {
+    height: 40px;
+    ul {
+      li {
+        float: left;
+        padding-right: 20px;
+      }
+      li:first-child {
+        border-right: 1px solid black;
+        margin-right: 20px;
+      }
+      li:nth-child(3) {
+        margin-top: -3px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .photoContent {
+    clear: both;
+    .photoImage {
+      float: left;
+      width: 220px;
+      height: 120px;
+      overflow: hidden;
+      img {
+        min-width: 220px;
+        min-height: 120px;
+      }
+    }
+    .description {
+      margin-left: 240px;
+
+      .tags {
+        overflow: hidden;
+        line-height: 20px;
+        span {
+          float: left;
+        }
+        ul {
+          margin-left: 35px;
+          li {
+            font-size: 13px;
+            padding: 0 3px;
+            background: white;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0 8px 5px;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .photoSubHeader {
+      height: 60px;
+      ul {
+        li:first-child {
+          padding-bottom: 10px;
+          border-right: 0;
+        }
+        li:nth-child(2) {
+          clear:both;
+        }
+      }
+    }
+    .photoContent {
+      .photoImage {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 220px;
+          height: auto;
+        }
+      }
+      .description {
+        margin-left: 0;
+      }
+    }
+  }
+}

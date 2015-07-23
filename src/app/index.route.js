@@ -12,6 +12,11 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/photoDetails', {
+        templateUrl: 'app/photoDetails/photoDetails.html',
+        controller: 'PhotoDetailsController',
+        controllerAs:'photoDetails'
+      })
       .otherwise({
         redirectTo: '/'
       });

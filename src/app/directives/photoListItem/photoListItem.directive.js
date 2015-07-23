@@ -16,7 +16,7 @@
 
     return directive;
 
-    function PhotoListItemController ($scope, moment) {
+    function PhotoListItemController ($scope, moment, photoDetail) {
 
       function getAuthorUrl () {
         var url = $scope.photo.link.split('/');
@@ -28,9 +28,14 @@
         return moment(publishedDate).format('Do MMM YYYY') + ' at ' + moment(publishedDate).format('HH:mm');
       }
 
+      function selectPhoto (photo) {
+        photoDetail.savePhoto(photo);
+      }
+
       return {
         getAuthorUrl: getAuthorUrl,
-        getPublishedDate: getPublishedDate
+        getPublishedDate: getPublishedDate,
+        selectPhoto: selectPhoto
       };
 
     }

@@ -10,12 +10,35 @@
   padding: 0.2em 0;
 }
 
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+html {
+  height: 100%;
+  background-color: #DFCFB5;
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
-  .container {
-    width: 90%;
-    margin: 0 auto;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-bottom: 40px;
+      font-size: 14px;
+
+      h1 {
+        font-size: 2em;
+        font-weight: 500;
+        padding: 40px 0;
+      }
+
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      p {
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
+    }
   }
 }
 
