@@ -27,7 +27,9 @@
     };
 
     function getTags () {
-      return $scope.photo.tags.split(" ");
+      if ($scope.photo.tags && $scope.photo.tags.length > 0) {
+        return $scope.photo.tags.split(" ");
+      }
     }
   }
 })();
